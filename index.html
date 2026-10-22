@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halcyon Grid — Calm infrastructure for busy teams</title>
+  <meta name="description" content="Halcyon Grid is a fictional platform engineering studio that designs, automates and operates reliable cloud infrastructure.">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#top" aria-label="Halcyon Grid home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Halcyon<strong>Grid</strong></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact" class="nav-cta">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">Platform engineering studio</p>
+        <h1>Infrastructure that stays calm when traffic doesn't.</h1>
+        <p class="lead">We design, automate and operate cloud platforms for product teams who would rather ship features than babysit servers.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a discovery call</a>
+          <a href="#services" class="btn btn-ghost">Explore services</a>
+        </div>
+        <ul class="hero-tags" aria-label="Core technologies">
+          <li>Linux</li><li>Containers</li><li>CI/CD</li><li>Observability</li><li>Infrastructure as Code</li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar"><span></span><span></span><span></span><em>deploy.log</em></div>
+          <pre><code><b>$</b> pipeline run --env production
+<i>✓</i> checkout        main @ 4f2c9e1
+<i>✓</i> validate        html, css, config
+<i>✓</i> stage release   2.3 MB in 0.4s
+<i>✓</i> atomic switch   zero downtime
+<span class="ok">deployed in 11s — all checks green</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>A small team obsessed with boring, predictable systems.</h2>
+        </div>
+        <div class="about-copy">
+          <p>Halcyon Grid started from a simple belief: the best infrastructure is the kind nobody has to think about. We pair senior engineers with your team to replace fragile manual steps with versioned, reviewable automation.</p>
+          <p>Every engagement ends with documentation, runbooks and a platform your own engineers understand and can confidently change.</p>
+          <ul class="pillars">
+            <li><strong>Automate first</strong><span>If it is done twice, it belongs in a pipeline.</span></li>
+            <li><strong>Least privilege</strong><span>Every service gets exactly the access it needs.</span></li>
+            <li><strong>Observable by default</strong><span>Logs, metrics and alerts ship with the code.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>Everything between <em>git push</em> and a happy user.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⟳</div>
+            <h3>CI/CD Pipelines</h3>
+            <p>Declarative pipelines that build, validate and deploy every commit with clear, auditable stages.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">▣</div>
+            <h3>Container Platforms</h3>
+            <p>Right-sized container hosting, from a single well-run server to multi-node orchestration.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">◎</div>
+            <h3>Observability</h3>
+            <p>Dashboards and alerts tuned to the signals that matter, so on-call stays quiet and useful.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⌘</div>
+            <h3>Infrastructure as Code</h3>
+            <p>Servers, networks and DNS described in version control and reviewed like application code.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⛨</div>
+            <h3>Security Hardening</h3>
+            <p>Scoped credentials, patched hosts and network boundaries designed with defence in depth.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">✦</div>
+            <h3>Team Enablement</h3>
+            <p>Workshops and pairing sessions that leave your engineers fluent in the platform they own.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How we work</p>
+          <h2>Four steps, no surprises.</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">01</span><h3>Discover</h3><p>We map your current systems, pain points and goals in a short, focused audit.</p></li>
+          <li><span class="step-num">02</span><h3>Design</h3><p>A written architecture proposal with trade-offs, costs and a phased plan.</p></li>
+          <li><span class="step-num">03</span><h3>Build</h3><p>Incremental delivery behind pipelines, with every change reviewed and reversible.</p></li>
+          <li><span class="step-num">04</span><h3>Hand over</h3><p>Runbooks, training and a support window while your team takes the wheel.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-panel">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's make your next deploy the boring kind.</h2>
+          <p>Tell us what you are building and where it hurts. We reply within two working days.</p>
+        </div>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:hello@halcyongrid.example">hello@halcyongrid.example</a></li>
+          <li><span>Office hours</span>Sun–Fri, 09:00–17:00</li>
+          <li><span>Response time</span>Within 2 working days</li>
+          <li><a href="mailto:hello@halcyongrid.example?subject=Project%20enquiry" class="btn btn-primary btn-block">Send an enquiry</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand brand-small" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Halcyon<strong>Grid</strong></span>
+      </a>
+      <p>Halcyon Grid is a fictional company created for an internship DevOps project.</p>
+      <p class="footer-meta">Website One · Deployed with Jenkins &amp; Apache</p>
+    </div>
+  </footer>
+</body>
+</html>
